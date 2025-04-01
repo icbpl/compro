@@ -1,0 +1,2589 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indo Cipanas Bonsai | Premium Bonsai and Ornamental Plants</title>
+  <meta name="description" content="Discover exquisite bonsai trees and rare ornamental plants ethically sourced from Indonesia's finest nurseries. Expert craftsmanship and global shipping available." />
+  <style>
+    /* Base styles */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+      --bonsai-dark-green: #1e3a2b;
+      --bonsai-olive: #606c38;
+      --bonsai-wheat: #dda15e;
+      --bonsai-beige: #fefae0;
+      --color-white: #ffffff;
+      --color-black: #000000;
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background-color: #fff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-all);
+    }
+
+    button {
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container-custom {
+      width: 100%;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .section-padding {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-padding {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+
+    /* Typography and utility classes */
+    .text-shadow-md {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .text-shadow-lg {
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Animation classes */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .animate-fade-in-left {
+      animation: fadeInLeft 0.8s ease forwards;
+    }
+
+    .animate-fade-in-right {
+      animation: fadeInRight 0.8s ease forwards;
+    }
+
+    .animate-fade-in-delay-1 {
+      animation: fadeIn 0.8s ease forwards;
+      animation-delay: 0.2s;
+    }
+
+    .animate-fade-in-delay-2 {
+      animation: fadeIn 0.8s ease forwards;
+      animation-delay: 0.4s;
+    }
+
+    .animate-fade-in-delay-3 {
+      animation: fadeIn 0.8s ease forwards;
+      animation-delay: 0.6s;
+    }
+
+    .animate-fade-in-delay-4 {
+      animation: fadeIn 0.8s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    /* Header styles */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      transition: all 0.3s ease;
+    }
+
+    .header.scrolled {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow-md);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .header-transparent {
+      background-color: transparent;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--bonsai-dark-green);
+    }
+
+    .logo img {
+      height: 2.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav-list {
+        display: flex;
+        list-style: none;
+        margin-left: 2rem;
+      }
+    }
+
+    .nav-item {
+      margin: 0 0.5rem;
+    }
+
+    .nav-link {
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      border-radius: 0.25rem;
+      color: var(--bonsai-dark-green);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background-color: rgba(254, 250, 224, 0.7);
+      color: var(--bonsai-olive);
+    }
+
+    .mobile-menu-button {
+      display: block;
+      background: none;
+      border: none;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-menu-button {
+        display: none;
+      }
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 72px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 40;
+      background-color: #fff;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    .mobile-menu-content {
+      height: 100%;
+      overflow-y: auto;
+      padding: 1.5rem;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      margin-bottom: 6rem;
+    }
+
+    .mobile-nav-item {
+      margin-bottom: 0.25rem;
+    }
+
+    .mobile-nav-link {
+      display: block;
+      padding: 0.75rem 0;
+      font-weight: 500;
+    }
+
+    /* Hero section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(30, 58, 43, 0.3);
+      backdrop-filter: blur(2px);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 0 1rem;
+      padding-top: 5rem;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background-color: rgba(30, 58, 43, 0.4);
+      color: white;
+      padding: 0.25rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      color: white;
+      margin-bottom: 1.5rem;
+      text-shadow: var(--shadow-lg);
+    }
+
+    @media (min-width: 640px) {
+      .hero-title {
+        font-size: 3rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 3.75rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-title {
+        font-size: 4.5rem;
+      }
+    }
+
+    .hero-title .highlight {
+      color: var(--bonsai-wheat);
+    }
+
+    .hero-desc {
+      max-width: 36rem;
+      margin: 0 auto;
+      margin-bottom: 2.5rem;
+      font-size: 1.125rem;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      background-color: rgba(30, 58, 43, 0.4);
+      backdrop-filter: blur(4px);
+      border-radius: 0.5rem;
+      display: inline-block;
+      text-shadow: var(--shadow-md);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-buttons {
+        flex-direction: row;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 12rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: var(--bonsai-dark-green);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: rgba(30, 58, 43, 0.9);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      background-color: rgba(30, 58, 43, 0.5);
+      backdrop-filter: blur(4px);
+      padding: 0.5rem 0.75rem;
+      border-radius: 9999px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-feature-icon {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      border-radius: 9999px;
+      box-shadow: var(--shadow-md);
+      margin-right: 0.75rem;
+    }
+
+    .hero-feature-icon img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .hero-feature-text {
+      margin-left: 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    .hero-scroll-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(4px);
+      border-radius: 9999px;
+      box-shadow: var(--shadow-md);
+      border: none;
+      color: white;
+    }
+
+    /* Section title component */
+    .section-title {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .section-title.left-align {
+      text-align: left;
+    }
+
+    .section-subtitle {
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bonsai-olive);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .section-heading {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 1rem;
+    }
+
+    .section-title.text-white .section-subtitle {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .section-title.text-white .section-heading {
+      color: white;
+    }
+
+    /* Services section */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-all);
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(96, 108, 56, 0.1);
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+      color: var(--bonsai-olive);
+    }
+
+    .service-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-desc {
+      color: #4B5563;
+      font-size: 0.9375rem;
+      line-height: 1.625;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 1rem;
+      font-weight: 500;
+      color: var(--bonsai-olive);
+    }
+
+    .service-link svg {
+      height: 1rem;
+      width: 1rem;
+      margin-left: 0.25rem;
+      transition: transform 0.2s ease;
+    }
+
+    .service-link:hover svg {
+      transform: translateX(3px);
+    }
+
+    .services-cta {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+
+    .services-cta-box {
+      background: linear-gradient(to right, var(--bonsai-dark-green), var(--bonsai-olive));
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      margin-top: 4rem;
+    }
+
+    .services-cta-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 1024px) {
+      .services-cta-grid {
+        grid-template-columns: 3fr 2fr;
+      }
+    }
+
+    .services-cta-content {
+      padding: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      .services-cta-content {
+        padding: 3rem;
+      }
+    }
+
+    .services-cta-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .services-cta-title {
+        font-size: 1.875rem;
+      }
+    }
+
+    .services-cta-text {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 1.5rem;
+    }
+
+    .services-cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn-white {
+      background-color: white;
+      color: var(--bonsai-dark-green);
+    }
+
+    .btn-white:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .services-cta-image {
+      position: relative;
+      height: 100%;
+      min-height: 15rem;
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      .services-cta-image {
+        display: block;
+      }
+    }
+
+    .services-cta-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .services-cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(30, 58, 43, 0.8), transparent);
+    }
+
+    /* Why choose us section */
+    .why-us {
+      background-color: rgba(254, 250, 224, 0.5);
+      position: relative;
+    }
+
+    .why-us-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .why-us-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .why-us-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .why-us-card {
+      background-color: white;
+      padding: 1.5rem 2rem;
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-all);
+    }
+
+    .why-us-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .why-us-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(254, 250, 224, 0.5);
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .why-us-icon svg {
+      color: var(--bonsai-olive);
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .why-us-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 0.75rem;
+    }
+
+    .why-us-desc {
+      color: #4B5563;
+    }
+
+    /* Process section */
+    .process {
+      background: linear-gradient(to right, var(--bonsai-dark-green), var(--bonsai-olive));
+      color: white;
+      position: relative;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    @media (min-width: 768px) {
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .process-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .process-line {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(221, 161, 94, 0.3);
+        transform: translateY(-50%);
+      }
+    }
+
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .process-icon {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(254, 250, 224, 0.2);
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+
+    .process-icon svg {
+      color: white;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .process-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .process-desc {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .process-number {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--bonsai-wheat);
+      border-radius: 9999px;
+      margin-top: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--bonsai-wheat);
+    }
+
+    .process-message {
+      text-align: center;
+      max-width: 48rem;
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
+
+    .process-message-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .process-message-text {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* About section */
+    .about {
+      background-color: var(--bonsai-beige);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+      }
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-main-image {
+      position: relative;
+      z-index: 10;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-main-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .about-decoration-1 {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      width: 66.666667%;
+      height: 8rem;
+      background-color: var(--bonsai-wheat);
+      border-radius: 0.5rem;
+      z-index: -10;
+      transform: rotate(-6deg);
+    }
+
+    .about-decoration-2 {
+      position: absolute;
+      top: -1.5rem;
+      right: -1.5rem;
+      width: 66.666667%;
+      height: 8rem;
+      background-color: rgba(96, 108, 56, 0.2);
+      border-radius: 0.5rem;
+      z-index: -10;
+      transform: rotate(6deg);
+    }
+
+    .about-content p {
+      color: #4B5563;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-features {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .about-feature {
+      display: flex;
+    }
+
+    .about-feature-icon {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(96, 108, 56, 0.2);
+      border-radius: 9999px;
+      margin-right: 0.75rem;
+    }
+
+    .about-feature-icon svg {
+      color: var(--bonsai-olive);
+      width: 0.875rem;
+      height: 0.875rem;
+    }
+
+    .about-feature-content h4 {
+      font-weight: 700;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 0.25rem;
+    }
+
+    .about-feature-content p {
+      font-size: 0.875rem;
+      color: #4B5563;
+      margin-bottom: 0;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .about-stat {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-stat-icon {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.5rem auto;
+      color: var(--bonsai-olive);
+    }
+
+    .about-stat-number {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--bonsai-dark-green);
+    }
+
+    .about-stat-label {
+      font-size: 0.75rem;
+      color: #4B5563;
+    }
+
+    /* Reviews section */
+    .reviews {
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .review-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+      padding: 2rem;
+      position: relative;
+    }
+
+    .review-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .review-header {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    .review-avatar {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 9999px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .review-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .review-author h3 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--bonsai-dark-green);
+    }
+
+    .review-author p {
+      font-size: 0.875rem;
+      color: #4B5563;
+    }
+
+    .review-stars {
+      display: flex;
+      margin-top: 0.25rem;
+    }
+
+    .review-stars svg {
+      width: 1rem;
+      height: 1rem;
+      fill: var(--bonsai-wheat);
+      color: var(--bonsai-wheat);
+    }
+
+    .review-quote {
+      color: #4B5563;
+      font-style: italic;
+    }
+
+    .review-decoration-quote {
+      position: absolute;
+      top: -1.25rem;
+      right: 2rem;
+      font-size: 5rem;
+      font-family: serif;
+      color: rgba(96, 108, 56, 0.2);
+    }
+
+    .review-decoration-icon {
+      position: absolute;
+      bottom: 1.5rem;
+      right: 2rem;
+      color: rgba(96, 108, 56, 0.1);
+    }
+
+    .review-decoration-icon svg {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .review-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .review-nav-dot {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 9999px;
+      background-color: rgba(96, 108, 56, 0.3);
+      margin: 0 0.25rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .review-nav-dot.active {
+      background-color: var(--bonsai-olive);
+      width: 2rem;
+    }
+
+    /* Contact section */
+    .contact {
+      background-color: var(--bonsai-beige);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 2fr 3fr;
+      }
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+      padding: 2rem;
+    }
+
+    .contact-info h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(96, 108, 56, 0.2);
+      border-radius: 9999px;
+      margin-right: 1rem;
+      color: var(--bonsai-olive);
+    }
+
+    .contact-text h4 {
+      font-weight: 600;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-text p, .contact-text a {
+      color: #4B5563;
+    }
+
+    .contact-text a:hover {
+      color: var(--bonsai-dark-green);
+    }
+
+    .contact-hours {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #E5E7EB;
+    }
+
+    .contact-hours h4 {
+      font-weight: 600;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-hours p {
+      color: #4B5563;
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-hours .hours {
+      font-weight: 500;
+      color: var(--bonsai-dark-green);
+    }
+
+    .contact-map {
+      margin-top: 2rem;
+    }
+
+    .contact-map-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--bonsai-dark-green);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .contact-map-link:hover {
+      color: var(--bonsai-olive);
+    }
+
+    .contact-map-link svg {
+      width: 1rem;
+      height: 1rem;
+      margin-left: 0.25rem;
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+      padding: 2rem;
+    }
+
+    .contact-form h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--bonsai-dark-green);
+      margin-bottom: 1.5rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #4B5563;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background-color: white;
+      border: 1px solid #D1D5DB;
+      border-radius: 0.375rem;
+      transition: all 0.2s ease;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--bonsai-olive);
+      box-shadow: 0 0 0 2px rgba(96, 108, 56, 0.25);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 8rem;
+    }
+
+    .form-submit {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-submit {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--bonsai-dark-green);
+      color: white;
+      border-radius: 0.375rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      z-index: 1;
+    }
+
+    .btn-submit:hover {
+      background-color: rgba(30, 58, 43, 0.9);
+    }
+
+    .btn-submit span {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-submit svg {
+      width: 1rem;
+      height: 1rem;
+      margin-left: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-submit:hover svg {
+      transform: translateX(3px);
+    }
+
+    .btn-submit::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: var(--bonsai-olive);
+      transition: all 0.3s ease;
+      z-index: 0;
+    }
+
+    .btn-submit:hover::before {
+      width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--bonsai-dark-green);
+      color: white;
+      padding-top: 5rem;
+      padding-bottom: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 640px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+      }
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    .footer-about {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1.5rem;
+      max-width: 24rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .footer-social-link {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .footer-social-link:hover {
+      background-color: var(--bonsai-olive);
+      transform: translateY(-3px);
+    }
+
+    .footer-heading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-link {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-link a {
+      color: rgba(255, 255, 255, 0.7);
+      transition: all 0.2s ease;
+    }
+
+    .footer-link a:hover {
+      color: white;
+      padding-left: 0.25rem;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-contact-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0.75rem;
+      color: var(--bonsai-wheat);
+      flex-shrink: 0;
+    }
+
+    .footer-newsletter p {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-form {
+      display: flex;
+    }
+
+    .footer-input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: none;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      color: white;
+    }
+
+    .footer-input:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .footer-input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer-button {
+      background-color: var(--bonsai-olive);
+      border: none;
+      color: white;
+      padding: 0.75rem 1rem;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+
+    .footer-button:hover {
+      background-color: var(--bonsai-wheat);
+    }
+
+    .footer-divider {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-copyright {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.875rem;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom-links {
+        margin-top: 0;
+      }
+    }
+
+    .footer-bottom-link {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.875rem;
+      transition: all 0.2s ease;
+    }
+
+    .footer-bottom-link:hover {
+      color: white;
+    }
+
+    /* Utility classes */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .responsive-image {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container-custom">
+      <div class="navbar">
+        <a href="#home" class="logo">
+          <span>Indo Cipanas Bonsai</span>
+        </a>
+        
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-button" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="#home" class="mobile-nav-link">Home</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#services" class="mobile-nav-link">Services</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#about" class="mobile-nav-link">About</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./vert.webp" type="image/webp">
+        <source media="(max-width: 767px)" srcset="./vert.png" type="image/png">
+        <source media="(min-width: 768px)" srcset="./img.webp" type="image/webp">
+        <source media="(min-width: 768px)" srcset="./img.jpg" type="image/jpeg">
+        <img src="./img.jpg" alt="Bonsai tree background" class="responsive-image">
+      </picture>
+    </div>
+    
+    <div class="container-custom hero-content">
+      <div class="animate-fade-in">
+        <p class="hero-badge">PREMIUM BONSAI ARTISTRY & EXPORTS</p>
+      </div>
+      
+      <h1 class="animate-fade-in-delay-1 hero-title">
+        Crafting Nature's<br>
+        <span class="highlight">Masterpieces</span>
+      </h1>
+      
+      <p class="animate-fade-in-delay-2 hero-desc">
+        From contest-ready specimens to rare ornamental plants, we blend artistry 
+        with ethical sourcing to create living works of art for collectors worldwide.
+      </p>
+      
+      <div class="animate-fade-in-delay-3 hero-buttons">
+        <a href="#services" class="btn btn-primary btn-lg">
+          Our Services
+        </a>
+        <a href="#contact" class="btn btn-primary btn-lg">
+          Get Quote
+        </a>
+      </div>
+      
+      <div class="animate-fade-in-delay-4 hero-features">
+        <div class="hero-feature">
+          <div class="hero-feature-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3321/3321414.png" alt="Certified">
+          </div>
+          <span class="hero-feature-text">CITES Certified</span>
+        </div>
+        
+        <div class="hero-feature">
+          <div class="hero-feature-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910756.png" alt="Experience">
+          </div>
+          <span class="hero-feature-text">10+ Years Experience</span>
+        </div>
+        
+        <div class="hero-feature">
+          <div class="hero-feature-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Global Shipping">
+          </div>
+          <span class="hero-feature-text">Global Shipping</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-scroll">
+      <a href="#services" class="hero-scroll-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding">
+    <div class="container-custom">
+      <div class="section-title">
+        <span class="section-subtitle">OUR EXPERTISE</span>
+        <h2 class="section-heading">Professional Services</h2>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service Item 1 -->
+        <article class="service-card animate-fade-in" style="animation-delay: 0s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 10-3 1.5L12 13l3-1.5z"></path>
+              <path d="M9.5 15v-4.5L6 12"></path>
+              <path d="M7 16 5 8l7-2 7 2-2 8-7 2z"></path>
+              <path d="M14.5 15v-4.5L18 12"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Semi-Mature Bonsai for Sale</h3>
+          <p class="service-desc">
+            Premium semi-mature bonsai (70-80% developed) perfect for resale, expertly pruned, wired, and root-trained for strong nebari, refined branching, and long-term health.
+          </p>
+        </article>
+
+        <!-- Service Item 2 -->
+        <article class="service-card animate-fade-in" style="animation-delay: 0.2s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A3.99 3.99 0 0 1 4 9h16a3.99 3.99 0 0 1 2-.65Z"></path>
+              <path d="M22 9V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3"></path>
+              <path d="M14 22v-4a2 2 0 1 0-4 0v4"></path>
+              <path d="M18 5V2"></path>
+              <path d="M6 5V2"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Wholesale Landscaping & Bulk Plants</h3>
+          <p class="service-desc">
+            Supplying high-volume landscaping plants for urban projects, resorts, and commercial green spaces. Our selection includes shade trees, ornamental palms, flowering shrubs, and ground covers.
+          </p>
+        </article>
+
+        <!-- Service Item 3 -->
+        <article class="service-card animate-fade-in" style="animation-delay: 0.4s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9m3 4.5a4.5 4.5 0 1 0 4.5-4.5M12 16.5V15m4.5-3H15"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Rare Tropical Plants Supplier</h3>
+          <p class="service-desc">
+            Exclusive rare and exotic tropical plants, including variegated Aroids, Philodendrons, Alocasias, and Orchids, sourced from Asia's biodiversity hotspots.
+          </p>
+        </article>
+
+        <!-- Service Item 4 -->
+        <article class="service-card animate-fade-in" style="animation-delay: 0.6s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Competition-Ready Bonsai</h3>
+          <p class="service-desc">
+            Exhibition-grade bonsai masterpieces, meticulously shaped over decades for competition and high-end collections. Featuring aged Junipers, Black Pines, and Maples.
+          </p>
+        </article>
+
+        <!-- Service Item 5 -->
+        <article class="service-card animate-fade-in" style="animation-delay: 0.8s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 18.5v3a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-3"></path>
+              <path d="M20.5 13.5v-2a2 2 0 0 0-2-2h-13a2 2 0 0 0-2 2v2"></path>
+              <path d="M2 13.5h20"></path>
+              <path d="M2 18.5h20"></path>
+              <path d="M12 13.5v9"></path>
+              <path d="M10 9.5V3.25a1.25 1.25 0 0 1 1.25-1.25h1.5A1.25 1.25 0 0 1 14 3.25V9.5"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Decorative Plant Pots Supplier</h3>
+          <p class="service-desc">
+            Premium bonsai and ornamental plant pots, crafted from high-fired ceramic, unglazed terracotta, and concrete, designed for durability and aesthetics.
+          </p>
+        </article>
+
+        <!-- Service Item 6 -->
+        <article class="service-card animate-fade-in" style="animation-delay: 1s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Custom Plant Sourcing & Orders</h3>
+          <p class="service-desc">
+            Tailored plant procurement services for nurseries, landscapers, and collectors. We source bulk landscaping trees, rare tropical species, large palms, and specialty bonsai.
+          </p>
+        </article>
+      </div>
+      
+      <!-- CTA Box -->
+      <div class="services-cta-box animate-fade-in" style="animation-delay: 1.2s;">
+        <div class="services-cta-grid">
+          <div class="services-cta-content">
+            <h3 class="services-cta-title">Ready to Start Your Bonsai Journey?</h3>
+            <p class="services-cta-text">
+              Whether you're looking for expert bonsai services or need help with a landscaping project, 
+              our team of professionals is ready to assist you at every step.
+            </p>
+            <div class="services-cta-buttons">
+              <a href="#contact" class="btn btn-white">
+                Request a Quote
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Schedule Consultation
+              </a>
+            </div>
+          </div>
+          <div class="services-cta-image">
+            <div class="services-cta-bg" style="background-image: url('https://images.unsplash.com/photo-1567748157439-651aca2ff064?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="services-cta-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" class="why-us section-padding">
+    <div class="container-custom">
+      <div class="section-title">
+        <span class="section-subtitle">WHY CHOOSE US</span>
+        <h2 class="section-heading">The Indo Cipanas Difference</h2>
+      </div>
+      
+      <div class="why-us-grid">
+        <!-- Item 1 -->
+        <div class="why-us-card animate-fade-in" style="animation-delay: 0s;">
+          <div class="why-us-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+            </svg>
+          </div>
+          <h3 class="why-us-title">Expert Craftsmanship</h3>
+          <p class="why-us-desc">Our bonsai masters have decades of combined experience, creating living art pieces with meticulous attention to detail.</p>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="why-us-card animate-fade-in" style="animation-delay: 0.2s;">
+          <div class="why-us-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+            </svg>
+          </div>
+          <h3 class="why-us-title">Premium Quality</h3>
+          <p class="why-us-desc">We select only the finest specimens, ensuring exceptional health, strong structure, and aesthetic appeal.</p>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="why-us-card animate-fade-in" style="animation-delay: 0.4s;">
+          <div class="why-us-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.5 17H7a5 5 0 0 1 0-10h7a5 5 0 0 1 0 10h-2.5"></path>
+              <path d="M14 7V5c0-2.2-2-5-5-5v6Z"></path>
+              <path d="M9 17v6c3 0 5-2.8 5-5v-1Z"></path>
+            </svg>
+          </div>
+          <h3 class="why-us-title">Sustainable Practices</h3>
+          <p class="why-us-desc">Our plants are ethically sourced and grown using environmentally friendly methods that respect nature's rhythm.</p>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="why-us-card animate-fade-in" style="animation-delay: 0.6s;">
+          <div class="why-us-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 18l5-3-5-3-5 3z"></path>
+              <path d="M7 21l5-3-5-3-5 3z"></path>
+              <path d="M17 6l5-3-5-3-5 3z"></path>
+              <path d="M7 9l5-3-5-3-5 3z"></path>
+              <path d="M12 9v3"></path>
+              <path d="M7 9v12"></path>
+              <path d="M17 6v12"></path>
+            </svg>
+          </div>
+          <h3 class="why-us-title">Local Partnerships</h3>
+          <p class="why-us-desc">We collaborate with trusted local farmers to ensure consistent supply of quality plants while supporting communities.</p>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="why-us-card animate-fade-in" style="animation-delay: 0.8s;">
+          <div class="why-us-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+            </svg>
+          </div>
+          <h3 class="why-us-title">Customer Satisfaction</h3>
+          <p class="why-us-desc">We're committed to exceeding expectations, with personalized service and expert guidance for every client.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process section-padding">
+    <div class="container-custom">
+      <div class="section-title text-white">
+        <span class="section-subtitle">OUR METHODOLOGY</span>
+        <h2 class="section-heading">From Farm to Customer</h2>
+      </div>
+      
+      <div class="process-grid">
+        <!-- Process Line (Visible on desktop only) -->
+        <div class="process-line"></div>
+        
+        <!-- Step 1 -->
+        <div class="process-step animate-fade-in" style="animation-delay: 0s;">
+          <div class="process-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 18l5-3-5-3-5 3z"></path>
+              <path d="M7 21l5-3-5-3-5 3z"></path>
+              <path d="M17 6l5-3-5-3-5 3z"></path>
+              <path d="M7 9l5-3-5-3-5 3z"></path>
+              <path d="M12 9v3"></path>
+              <path d="M7 9v12"></path>
+              <path d="M17 6v12"></path>
+            </svg>
+          </div>
+          <h3 class="process-title">Local Partnerships</h3>
+          <p class="process-desc">We establish deep relationships with local farmers across Indonesia, ensuring fair partnerships while securing premium plant sources.</p>
+          <div class="process-number">1</div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="process-step animate-fade-in" style="animation-delay: 0.2s;">
+          <div class="process-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 22V2m0 12-3.75-3"></path>
+              <path d="M7 14l3.75-3"></path>
+              <path d="M17 2v20m0-12 3.75 3"></path>
+              <path d="M17 10l-3.75 3"></path>
+            </svg>
+          </div>
+          <h3 class="process-title">Cultivation & Selection</h3>
+          <p class="process-desc">Our experts carefully select and cultivate each plant, ensuring only the healthiest specimens with the best characteristics proceed to the next stage.</p>
+          <div class="process-number">2</div>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="process-step animate-fade-in" style="animation-delay: 0.4s;">
+          <div class="process-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <h3 class="process-title">Expert Processing</h3>
+          <p class="process-desc">Plants undergo professional preparation: cleaning, inspection, skilled pruning, appropriate potting, and final quality assessment before shipment.</p>
+          <div class="process-number">3</div>
+        </div>
+        
+        <!-- Step 4 -->
+        <div class="process-step animate-fade-in" style="animation-delay: 0.6s;">
+          <div class="process-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 17v1c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1v-5c0-.6.4-1 1-1h7c.6 0 1 .4 1 1v1"></path>
+              <path d="M21 2h-8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"></path>
+              <path d="M21 15h-8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1Z"></path>
+              <path d="M6 12h12"></path>
+              <path d="M6 12v2"></path>
+              <path d="M18 12v2"></path>
+            </svg>
+          </div>
+          <h3 class="process-title">Secure Delivery</h3>
+          <p class="process-desc">We use specialized packaging techniques and trusted logistics partners to ensure your plants arrive in perfect condition, no matter the destination.</p>
+          <div class="process-number">4</div>
+        </div>
+      </div>
+      
+      <div class="process-message animate-fade-in" style="animation-delay: 0.8s;">
+        <h3 class="process-message-title">Sustainable Supply Chain</h3>
+        <p class="process-message-text">
+          Our direct relationship with local farmers eliminates middlemen, ensuring better compensation for growers 
+          and higher quality products for you. We're committed to ethical practices that support both communities and the environment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+    <div class="container-custom">
+      <div class="about-grid">
+        <!-- Left Side - Image -->
+        <div class="about-image animate-fade-in-left">
+          <div class="about-main-image">
+            <img src="./loc.jpg" alt="Indo Cipanas Bonsai nursery entrance" loading="lazy" class="responsive-image">
+          </div>
+          <div class="about-decoration-1"></div>
+          <div class="about-decoration-2"></div>
+        </div>
+        
+        <!-- Right Side - Content -->
+        <div class="about-content animate-fade-in-right">
+          <div class="section-title left-align">
+            <span class="section-subtitle">OUR STORY</span>
+            <h2 class="section-heading">Passionate About Bonsai Excellence</h2>
+          </div>
+          
+          <p>
+            For over a decade, Indo Cipanas Bonsai has been cultivating extraordinary bonsai specimens and ornamental plants from our nurseries in the highlands of West Java, Indonesia. Our team of master growers combines traditional techniques with innovative approaches to create living works of art that grace collections worldwide.
+          </p>
+          
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="about-feature-content">
+                <h4>Ethical Sourcing</h4>
+                <p>All our plants are nursery-grown or legally harvested with proper documentation.</p>
+              </div>
+            </div>
+            
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="about-feature-content">
+                <h4>Expert Craftsmanship</h4>
+                <p>Our bonsai masters have decades of combined experience in the art of bonsai.</p>
+              </div>
+            </div>
+            
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="about-feature-content">
+                <h4>Global Reach</h4>
+                <p>We export to collectors and businesses in over 30 countries with proper documentation.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Stats -->
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+              </div>
+              <div class="about-stat-number">10+</div>
+              <div class="about-stat-label">Years Experience</div>
+            </div>
+            
+            <div class="about-stat">
+              <div class="about-stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="about-stat-number">30+</div>
+              <div class="about-stat-label">Countries Served</div>
+            </div>
+            
+            <div class="about-stat">
+              <div class="about-stat-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/628/628324.png" alt="Bonsai Icon" width="24" height="24">
+              </div>
+              <div class="about-stat-number">5000+</div>
+              <div class="about-stat-label">Bonsai Created</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews section-padding">
+    <div class="container-custom">
+      <div class="section-title">
+        <span class="section-subtitle">CUSTOMER TESTIMONIALS</span>
+        <h2 class="section-heading">What Our Clients Say</h2>
+      </div>
+      
+      <div class="review-card animate-fade-in">
+        <div class="review-decoration-quote">"</div>
+        
+        <div class="review-header">
+          <div class="review-avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="David Chen" loading="lazy">
+          </div>
+          
+          <div class="review-author">
+            <h3>David Chen</h3>
+            <p>Landscape Architect, Singapore</p>
+            <div class="review-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <p class="review-quote">"Indo Cipanas Bonsai has been our trusted supplier for three years. Their plants consistently exceed expectations in quality and health. The export process is seamless, making them our preferred partner for all landscaping projects."</p>
+        
+        <div class="review-decoration-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"></path>
+            <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path>
+          </svg>
+        </div>
+      </div>
+      
+      <div class="review-nav">
+        <button class="review-nav-dot active" aria-label="View review 1"></button>
+        <button class="review-nav-dot" aria-label="View review 2"></button>
+        <button class="review-nav-dot" aria-label="View review 3"></button>
+        <button class="review-nav-dot" aria-label="View review 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="container-custom">
+      <div class="section-title">
+        <span class="section-subtitle">GET IN TOUCH</span>
+        <h2 class="section-heading">Contact Us</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info animate-fade-in-left">
+          <h3>Contact Information</h3>
+          
+          <address class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h4>Our Location</h4>
+                <p>Jl. Hanjawar, Palasari, Kec. Cipanas, Kabupaten Cianjur, Jawa Barat 43253, Indonesia</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h4>Email Us</h4>
+                <p>
+                  <a href="mailto:info@icbplants.com">info@icbplants.com</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h4>Call Us</h4>
+                <p>
+                  <a href="tel:+6283869663229">+62 838 6966 3229</a>
+                </p>
+              </div>
+            </div>
+          </address>
+          
+          <div class="contact-hours">
+            <h4>Business Hours</h4>
+            <p>Monday - Thursday:</p>
+            <p class="hours">9:00 AM - 6:00 PM</p>
+            
+            <p>Friday - Sunday:</p>
+            <p class="hours">9:00 AM - 6:00 PM</p>
+            
+            <p class="text-xs italic mt-2 text-gray-500">
+              * Hours may differ during holidays
+            </p>
+          </div>
+          
+          <div class="contact-map">
+            <a href="#contact" class="contact-map-link">
+              View on map
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form animate-fade-in-right">
+          <h3>Send Us a Message</h3>
+          
+          <form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required aria-required="true">
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Your email" required aria-required="true">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject <span aria-hidden="true">*</span></label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="How can we help you?" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Your message..." required aria-required="true"></textarea>
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="btn-submit">
+                <span>
+                  Send Message
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m22 2-7 20-4-9-9-4Z"></path>
+                    <path d="M22 2 11 13"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span>Indo Cipanas Bonsai</span>
+          </div>
+          <p class="footer-about">
+            Crafting nature's living masterpieces through expert artistry and sustainable cultivation. We deliver premium bonsai and rare plants to collectors and businesses worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                <path d="m10 15 5-3-5-3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#home">Home</a></li>
+            <li class="footer-link"><a href="#services">Services</a></li>
+            <li class="footer-link"><a href="#about">About Us</a></li>
+            <li class="footer-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-contact-icon">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Jl. Hanjawar, Palasari, Kec. Cipanas, Jawa Barat 43253, Indonesia</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-contact-icon">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+62 838 6966 3229</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-contact-icon">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>info@icbplants.com</span>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Newsletter</h4>
+          <p>Subscribe to our newsletter to get updates on new plants and special offers.</p>
+          <form class="footer-form">
+            <input type="email" class="footer-input" placeholder="Your email address">
+            <button type="submit" class="footer-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 2-7 20-4-9-9-4Z"></path>
+                <path d="M22 2 11 13"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; <span id="current-year">2023</span> Indo Cipanas Bonsai. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#" class="footer-bottom-link">Terms of Service</a>
+          <a href="#" class="footer-bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update copyright year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    mobileMenuButton.addEventListener('click', function() {
+      const isOpen = mobileMenu.classList.contains('open');
+      mobileMenu.classList.toggle('open');
+      mobileMenuButton.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      
+      if (!isOpen) {
+        // Change to X icon
+        menuIcon.innerHTML = `
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        `;
+      } else {
+        // Change back to menu icon
+        menuIcon.innerHTML = `
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        `;
+      }
+    });
+    
+    // Close mobile menu when clicking on links
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('open');
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        menuIcon.innerHTML = `
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        `;
+      });
+    });
+    
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Active navigation links
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavItems = document.querySelectorAll('.mobile-nav-link');
+    
+    function setActiveLink() {
+      const scrollPosition = window.scrollY + 100;
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          // Desktop nav
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+          
+          // Mobile nav
+          mobileNavItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+    
+    // Set active link on scroll
+    window.addEventListener('scroll', setActiveLink);
+    window.addEventListener('load', setActiveLink);
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Review navigation
+    const reviewDots = document.querySelectorAll('.review-nav-dot');
+    reviewDots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        reviewDots.forEach(d => d.classList.remove('active'));
+        this.classList.add('active');
+        // Here you would switch to the appropriate review
+      });
+    });
+    
+    // Intersection Observer for animation
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const elements = entry.target.querySelectorAll('.animate-fade-in, .animate-fade-in-left, .animate-fade-in-right, .animate-fade-in-delay-1, .animate-fade-in-delay-2, .animate-fade-in-delay-3, .animate-fade-in-delay-4');
+          elements.forEach(element => {
+            element.style.opacity = '1';
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+    
+    // Form submission handling
+    const contactForm = document.querySelector('.contact-form form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Here you would handle the form submission
+        alert("Thank you for your message! We will get back to you soon.");
+        contactForm.reset();
+      });
+    }
+    
+    const newsletterForm = document.querySelector('.footer-form');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Here you would handle the newsletter subscription
+        alert("Thank you for subscribing to our newsletter!");
+        newsletterForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>
